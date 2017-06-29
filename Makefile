@@ -1,9 +1,12 @@
 build-validator:
 	docker build -t opstree/anisble_validator .
 
+build-target:
+	docker build -t opstree/target . -f Dockerfile.target
+
 run-target:
 	docker rm -f target || true
-	docker run -itd --name target ubuntu:16.04
+	docker run -itd --name target opstree/target
 
 run-validator:
 	docker rm -f anisble_validator || true
