@@ -10,4 +10,4 @@ run-target:
 
 run-validator:
 	docker rm -f anisble_validator || true
-	docker run -it --name anisble_validator -v /home/devops/validator:/validators --link target:target opstree/anisble_validator /bin/bash
+	docker run -it --name anisble_validator -v /home/opstree/docker/validator:/validators --link target:target opstree/anisble_validator /bin/bash
