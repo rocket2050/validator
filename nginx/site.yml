@@ -1,0 +1,6 @@
+---
+- hosts: targets
+  become: yes
+  roles:
+    - { role: "nginx" }
+

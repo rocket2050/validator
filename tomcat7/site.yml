@@ -1,5 +1,6 @@
 ---
-- hosts: targets
+
+- hosts: 
   become: yes
   roles:
     - { role: "tomcat7" }
