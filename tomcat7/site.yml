@@ -1,6 +1,6 @@
 ---
 
-- hosts: 
+- hosts: "{{ host }}" 
   become: yes
   roles:
     - { role: "tomcat7" }

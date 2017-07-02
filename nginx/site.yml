@@ -1,5 +1,5 @@
 ---
-- hosts: targets
+- hosts: "{{ host }}"
   become: yes
   roles:
     - { role: "nginx" }
